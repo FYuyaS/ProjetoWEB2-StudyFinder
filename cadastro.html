@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StudyFinder — cadastro</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="app">
+  <div class="topbar">
+    <a class="brand" href="index.html">StudyFinder<span>.</span></a>
+  </div>
+
+  <main>
+    <div class="welcome">
+      <h1>Crie seu perfil</h1>
+      <p>Com essas informações sugerimos grupos de estudo de pessoas parecidas com você.</p>
+    </div>
+
+    <form class="form-card centered">
+      <div class="field">
+        <label for="nome">Nome</label>
+        <input id="nome" type="text" placeholder="Como você quer ser chamado(a)">
+      </div>
+
+      <div class="field">
+        <label for="curso">Curso</label>
+        <input id="curso" type="text" list="cursos" placeholder="Ex: Ciência da Computação">
+        <datalist id="cursos">
+          <option value="Ciência da Computação">
+          <option value="Engenharia de Computação">
+          <option value="Engenharia Elétrica">
+          <option value="Matemática">
+          <option value="Física">
+          <option value="Estatística">
+        </datalist>
+      </div>
+
+      <div class="field">
+        <label for="ingresso">Ano de ingresso</label>
+        <select id="ingresso">
+          <option>2026</option>
+          <option>2025</option>
+          <option>2024</option>
+          <option>2023</option>
+          <option>2022</option>
+          <option>2021</option>
+          <option>2020</option>
+          <option>2019</option>
+          <option>2018</option>
+          <option>2017</option>
+          <option>2016</option>
+        </select>
+      </div>
+
+      <a class="primary-btn" href="index.html">Começar</a>
+      <a class="cancel-link" href="index.html">Agora não</a>
+    </form>
+  </main>
+</div>
+
+</body>
+</html>

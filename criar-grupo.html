@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StudyFinder — criar grupo de estudo</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="app">
+  <div class="page-head">
+    <a class="back-link" href="index.html" aria-label="Voltar">←</a>
+    <div>
+      <h1>Criar grupo de estudo</h1>
+      <div class="sub">Preencha o essencial — você pode ajustar depois</div>
+    </div>
+  </div>
+
+  <main>
+    <form class="form-card">
+      <div class="field">
+        <label for="nome">Nome do grupo</label>
+        <input id="nome" type="text" placeholder="Ex: Noturno de Cálculo">
+      </div>
+
+      <div class="field">
+        <label for="materia">Matéria</label>
+        <select id="materia">
+          <option>Cálculo II</option>
+          <option>Estrutura de Dados</option>
+          <option>Física III</option>
+          <option>Outra…</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="professor">Professor(a) <span class="opt">(opcional)</span></label>
+        <input id="professor" type="text" placeholder="Ex: Profa. Renata Lima">
+      </div>
+
+      <a class="primary-btn" href="grupo.html">Criar grupo</a>
+      <a class="cancel-link" href="index.html">Cancelar</a>
+    </form>
+  </main>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StudyFinder — buscar grupos de estudo</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="app">
+  <div class="page-head">
+    <a class="back-link" href="index.html" aria-label="Voltar">←</a>
+    <div>
+      <h1>Buscar grupos</h1>
+      <div class="sub">Encontre um grupo da sua matéria</div>
+    </div>
+  </div>
+
+  <main>
+    <label class="search-box">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg>
+      <input type="search" placeholder="Matéria, professor ou nome do grupo" aria-label="Buscar grupos">
+    </label>
+
+    <div class="chips">
+      <button class="chip active" type="button">Todos</button>
+      <button class="chip" type="button">Cálculo II</button>
+      <button class="chip" type="button">Estrutura de Dados</button>
+      <button class="chip" type="button">Física III</button>
+      <button class="chip" type="button">Álgebra Linear</button>
+      <button class="chip" type="button">Probabilidade</button>
+    </div>
+
+    <div class="section-title">
+      <h2>Grupos encontrados</h2>
+      <span class="hint">6 resultados</span>
+    </div>
+
+    <div class="results">
+      <div class="result-card">
+        <span class="tag-bar coral"></span>
+        <div class="group-info">
+          <h3>Cálculo na Madrugada</h3>
+          <div class="materia">Cálculo II</div>
+          <div class="prof">Profa. Renata Lima</div>
+          <div class="stats">12 membros · Seg, 20h</div>
+        </div>
+        <button class="btn-join" type="button">Participar</button>
+      </div>
+
+      <div class="result-card">
+        <span class="tag-bar teal"></span>
+        <div class="group-info">
+          <h3>Estruturas na Prática</h3>
+          <div class="materia">Estrutura de Dados</div>
+          <div class="prof">Prof. Haroldo Vince</div>
+          <div class="stats">7 membros · Ter, 16h</div>
+        </div>
+        <button class="btn-join" type="button">Participar</button>
+      </div>
+
+      <div class="result-card">
+        <span class="tag-bar lavanda"></span>
+        <div class="group-info">
+          <h3>Física Sem Pânico</h3>
+          <div class="materia">Física III</div>
+          <div class="prof">Profa. Elisa Bastos</div>
+          <div class="stats">4 membros · Qui, 18h</div>
+        </div>
+        <button class="btn-join" type="button">Participar</button>
+      </div>
+
+      <div class="result-card">
+        <span class="tag-bar mostarda"></span>
+        <div class="group-info">
+          <h3>Álgebra em Dupla</h3>
+          <div class="materia">Álgebra Linear</div>
+          <div class="prof">Prof. Marcos Teixeira</div>
+          <div class="stats">3 membros · Qua, 10h</div>
+        </div>
+        <button class="btn-join" type="button">Participar</button>
+      </div>
+
+      <div class="result-card">
+        <span class="tag-bar teal"></span>
+        <div class="group-info">
+          <h3>Probabilidade Aplicada</h3>
+          <div class="materia">Probabilidade</div>
+          <div class="prof">Profa. Cláudia Reis</div>
+          <div class="stats">9 membros · Sex, 14h</div>
+        </div>
+        <button class="btn-join" type="button">Participar</button>
+      </div>
+
+      <div class="result-card">
+        <span class="tag-bar coral"></span>
+        <div class="group-info">
+          <h3>Integrais Sem Medo</h3>
+          <div class="materia">Cálculo II</div>
+          <div class="prof">Prof. Paulo Andrade</div>
+          <div class="stats">6 membros · Qui, 19h</div>
+        </div>
+        <button class="btn-join" type="button">Participar</button>
+      </div>
+    </div>
+  </main>
+</div>
+
+</body>
+</html>

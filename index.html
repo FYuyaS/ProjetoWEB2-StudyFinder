@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StudyFinder — meus grupos de estudo</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="app">
+  <div class="topbar">
+    <a class="brand" href="index.html">StudyFinder<span>.</span></a>
+    <a class="avatar" href="cadastro.html" aria-label="Meu perfil">M</a>
+  </div>
+
+  <main>
+    <a class="search-link search-box" href="busca-grupos.html" style="position:relative;">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="21" y2="21"/></svg>
+      Buscar grupos de estudo
+    </a>
+
+    <div class="section-title">
+      <h2>Meus grupos de estudo</h2>
+      <span class="hint">3 grupos</span>
+    </div>
+
+    <div class="groups">
+      <a class="group-card" href="grupo.html">
+        <span class="tag-bar coral"></span>
+        <div class="group-info">
+          <h3>Noturno de Cálculo</h3>
+          <div class="materia">Cálculo II</div>
+        </div>
+        <div class="group-meta">
+          <div class="next">Qua · 19h</div>
+          <div class="members">8 membros</div>
+        </div>
+      </a>
+
+      <a class="group-card" href="grupo.html">
+        <span class="tag-bar teal"></span>
+        <div class="group-info">
+          <h3>ED em Grupo</h3>
+          <div class="materia">Estrutura de Dados</div>
+        </div>
+        <div class="group-meta">
+          <div class="next">Qui · 14h30</div>
+          <div class="members">5 membros</div>
+        </div>
+      </a>
+
+      <a class="group-card" href="grupo.html">
+        <span class="tag-bar lavanda"></span>
+        <div class="group-info">
+          <h3>Física Sexta</h3>
+          <div class="materia">Física III</div>
+        </div>
+        <div class="group-meta">
+          <div class="next">Sex · 10h</div>
+          <div class="members">3 membros</div>
+        </div>
+      </a>
+
+      <a class="add-group" href="criar-grupo.html">+ Criar grupo de estudo</a>
+    </div>
+
+    <div class="section-title">
+      <h2>Próximas sessões</h2>
+      <span class="hint">Dos seus grupos</span>
+    </div>
+
+    <div class="sessions">
+      <a class="session-row" href="grupo.html">
+        <span class="dot"></span>
+        <div class="info">
+          <strong>Noturno de Cálculo</strong>
+          <span>Qua, 19h · Biblioteca, sala 2</span>
+        </div>
+      </a>
+      <a class="session-row" href="grupo.html">
+        <span class="dot"></span>
+        <div class="info">
+          <strong>ED em Grupo</strong>
+          <span>Qui, 14h30 · Online</span>
+        </div>
+      </a>
+    </div>
+  </main>
+</div>
+
+</body>
+</html>

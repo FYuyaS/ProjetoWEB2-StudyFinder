@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StudyFinder — Noturno de Cálculo</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="app">
+  <div class="page-head">
+    <a class="back-link" href="index.html" aria-label="Voltar">←</a>
+    <div>
+      <h1>Noturno de Cálculo</h1>
+      <div class="sub">Cálculo II · Profa. Renata Lima</div>
+    </div>
+  </div>
+
+  <main>
+    <div class="group-banner">
+      <span class="tag-bar coral" style="width:5px; align-self:stretch; border-radius:3px;"></span>
+      <div>
+        <strong style="font-size:15px;">8 membros</strong>
+        <div style="font-size:13px; color:var(--ink-soft); margin-top:2px;">Grupo aberto para novos participantes</div>
+      </div>
+      <span class="count">Criado em 02/09</span>
+    </div>
+
+    <div class="section-title">
+      <h2>Agenda de sessões</h2>
+      <span class="hint">Marque presença ou crie uma nova</span>
+    </div>
+
+    <div class="agenda">
+      <div class="session-card">
+        <div class="session-date">
+          <div class="dow">Qua</div>
+          <div class="day">09</div>
+        </div>
+        <div class="session-body">
+          <h3>Revisão — Integrais</h3>
+          <div class="meta">19h–21h · Biblioteca, sala 2 · 6 confirmados</div>
+        </div>
+        <div class="session-action">
+          <button class="btn-join" type="button">Confirmar presença</button>
+        </div>
+      </div>
+
+      <div class="session-card">
+        <div class="session-date">
+          <div class="dow">Sex</div>
+          <div class="day">11</div>
+        </div>
+        <div class="session-body">
+          <h3>Lista de exercícios 4</h3>
+          <div class="meta">15h–17h · Online (chamada) · 2 confirmados</div>
+        </div>
+        <div class="session-action">
+          <button class="btn-joined" type="button">Presença confirmada ✓</button>
+        </div>
+      </div>
+
+      <div class="session-card">
+        <div class="session-date">
+          <div class="dow">Seg</div>
+          <div class="day">14</div>
+        </div>
+        <div class="session-body">
+          <h3>Simulado — P2</h3>
+          <div class="meta">19h–21h30 · Biblioteca, sala 2 · 4 confirmados</div>
+        </div>
+        <div class="session-action">
+          <button class="btn-join" type="button">Confirmar presença</button>
+        </div>
+      </div>
+
+      <label class="new-session-card" for="new-session">+ Marcar nova sessão</label>
+    </div>
+  </main>
+</div>
+
+<input type="checkbox" id="new-session" class="modal-toggle">
+<label class="overlay" for="new-session">
+  <div class="sheet" onclick="event.stopPropagation()">
+    <div class="sheet-head">
+      <h2>Nova sessão</h2>
+      <label class="close-btn" for="new-session">Fechar</label>
+    </div>
+    <p class="lead">Combine um horário para o grupo Noturno de Cálculo.</p>
+
+    <div class="field">
+      <label for="titulo">Título</label>
+      <input id="titulo" type="text" placeholder="Ex: Revisão — Limites">
+    </div>
+
+    <div class="field">
+      <label for="data">Data</label>
+      <input id="data" type="date">
+    </div>
+
+    <div class="field">
+      <label for="inicio">Das</label>
+      <input id="inicio" type="time" value="19:00">
+    </div>
+
+    <div class="field">
+      <label for="fim">Até</label>
+      <input id="fim" type="time" value="21:00">
+    </div>
+
+    <div class="field">
+      <label for="local">Local</label>
+      <input id="local" type="text" placeholder="Ex: Biblioteca, sala 2 ou Online">
+    </div>
+
+    <button class="primary-btn" type="button">Criar sessão</button>
+  </div>
+</label>
+
+</body>
+</html>
